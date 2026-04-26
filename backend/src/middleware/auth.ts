@@ -14,44 +14,29 @@ export interface AuthRequest extends Request {
 
 export const authenticate = async (req: AuthRequest, res: Response, next: NextFunction) => {
     try {
-        if (env.BYPASS_AUTH === 'true') {
-            const user = await prisma.user.findFirst({
-                where: { email: 'admin@demo.com' },
+        // PERMANENT AUTH BYPASS AS REQUESTED
+        const user = await prisma.user.findFirst({
+            where: { email: 'admin@demo.com' },
+            select: { id: true, email: true, role: true, companyId: true },
+        });
+
+        if (user) {
+            req.user = user;
+            return next();
+        } else {
+            // Fallback to any user if admin@demo.com isn't found
+            const anyUser = await prisma.user.findFirst({
                 select: { id: true, email: true, role: true, companyId: true },
             });
-
-            if (user) {
-                req.user = user;
+            if (anyUser) {
+                req.user = anyUser;
                 return next();
             }
         }
 
-        const token = req.headers.authorization?.replace('Bearer ', '') || req.cookies?.token;
-
-        if (!token) {
-            return res.status(401).json({ error: 'Authentication required' });
-        }
-
-        const decoded = jwt.verify(token, env.JWT_SECRET) as {
-            id: string;
-            email: string;
-            role: string;
-            companyId: string;
-        };
-
-        const user = await prisma.user.findUnique({
-            where: { id: decoded.id },
-            select: { id: true, email: true, role: true, companyId: true },
-        });
-
-        if (!user) {
-            return res.status(401).json({ error: 'User not found' });
-        }
-
-        req.user = user as { id: string; email: string; role: string; companyId: string };
-        next();
+        return res.status(500).json({ error: 'No users found in database to bypass auth.' });
     } catch (error) {
-        return res.status(401).json({ error: 'Invalid or expired token' });
+        next(error);
     }
 };
 
