@@ -74,8 +74,8 @@ async function processFileAsync(fileId: string, filePath: string, fileName: stri
             data: {
                 status: 'COMPLETED',
                 processedRows: rows?.length || 0,
-                errors: errors || [],
-                mappings: { columns, data_quality_score },
+                errors: JSON.stringify(errors || []),
+                mappings: JSON.stringify({ columns, data_quality_score }),
             },
         });
 
@@ -90,7 +90,10 @@ async function processFileAsync(fileId: string, filePath: string, fileName: stri
     } catch (error: any) {
         await prisma.uploadedFile.update({
             where: { id: fileId },
-            data: { status: 'FAILED', errors: [{ message: error.message }] },
+            data: {
+                status: 'FAILED',
+                errors: JSON.stringify([{ message: error.message }])
+            },
         });
 
         io.to(companyId).emit('upload:failed', { fileId, error: error.message });
@@ -117,7 +120,7 @@ export const saveColumnMapping = async (req: AuthRequest, res: Response) => {
 
         const file = await prisma.uploadedFile.update({
             where: { id: fileId },
-            data: { mappings },
+            data: { mappings: JSON.stringify(mappings) },
         });
 
         return res.json(file);
