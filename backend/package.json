@@ -12,7 +12,8 @@
         "migrate:deploy": "prisma migrate deploy",
         "prisma:studio": "prisma studio",
         "lint": "eslint src --ext .ts",
-        "postinstall": "prisma generate"
+        "postinstall": "prisma generate",
+        "seed": "ts-node prisma/seed.ts"
     },
     "dependencies": {
         "@anthropic-ai/sdk": "^0.24.0",
