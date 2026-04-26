@@ -1,0 +1,17 @@
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+
+Error: Prisma schema validation - (validate wasm)
+Error code: P1012
+[1;91merror[0m: [1mError validating field `budgets` in model `User`: The relation field `budgets` on model `User` is missing an opposite relation field on the model `BudgetPlan`. Either run `prisma format` or add it manually.[0m
+  [1;94m-->[0m  [4mprisma\schema.prisma:22[0m
+[1;94m   | [0m
+[1;94m21 | [0m  company  Company    @relation(fields: [companyId], references: [id])
+[1;94m22 | [0m  [1;91mbudgets  BudgetPlan[] @relation("UserBudgets")[0m
+[1;94m23 | [0m  reports  Report[]     @relation("UserReports")
+[1;94m   | [0m
+
+Validation Error Count: 1
+[Context: validate]
+
+Prisma CLI Version : 5.22.0

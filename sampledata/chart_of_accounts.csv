@@ -1,0 +1,17 @@
+Account Code,Account Name,Type,Category,Sub-Category,Is Active
+4001,Product Revenue,REVENUE,Revenue,Product Sales,Yes
+4002,Service Revenue,REVENUE,Revenue,Service Fees,Yes
+5001,Engineering Salaries,EXPENSE,Salaries,Engineering,Yes
+5002,Cloud Infrastructure,EXPENSE,Technology,Cloud Services,Yes
+5101,Marketing Campaigns,EXPENSE,Marketing,Digital Campaigns,Yes
+5102,Marketing Salaries,EXPENSE,Salaries,Marketing,Yes
+5201,Sales Salaries,EXPENSE,Salaries,Sales,Yes
+6001,Digital Ads,EXPENSE,Marketing,Digital Advertising,Yes
+6002,Events & Conferences,EXPENSE,Marketing,Events,Yes
+7001,Sales Team Salaries,EXPENSE,Salaries,Sales Team,Yes
+7002,Sales Commission,EXPENSE,Commission,Variable Pay,Yes
+8001,HR Salaries,EXPENSE,Salaries,HR,Yes
+9001,Finance Salaries,EXPENSE,Salaries,Finance,Yes
+9100,Office Rent,EXPENSE,General & Admin,Facilities,Yes
+9200,Insurance,EXPENSE,General & Admin,Insurance,Yes
+9300,Depreciation,EXPENSE,Non-Cash,Depreciation,Yes

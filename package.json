@@ -1,0 +1,21 @@
+{
+    "name": "financial-budget-builder",
+    "version": "1.0.0",
+    "description": "AI-Powered Financial Budget Builder — Full Stack",
+    "private": true,
+    "scripts": {
+        "dev": "npx concurrently -n BACKEND,FRONTEND -c blue,green \"npm run dev:backend\" \"npm run dev:frontend\"",
+        "dev:backend": "cd backend && npm run dev",
+        "dev:frontend": "cd frontend && npm run dev",
+        "install:all": "cd backend && npm install && cd ../frontend && npm install",
+        "build": "cd backend && npm run build && cd ../frontend && npm run build",
+        "start:backend": "cd backend && npm start",
+        "start:frontend": "cd frontend && npm start",
+        "prisma:generate": "cd backend && npx prisma generate",
+        "prisma:migrate": "cd backend && npx prisma migrate dev",
+        "prisma:studio": "cd backend && npx prisma studio"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

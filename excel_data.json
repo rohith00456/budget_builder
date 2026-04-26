@@ -1,0 +1,1223 @@
+{
+  "\ud83d\udccb Executive Summary": [
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "Based on: Financial_Budget_Builder_Final_Test_Output.xlsx  |  Date Analysed: 25 Apr 2026  |  Prepared by: Claude",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u26a0\ufe0f  KEY FINDING: All 104 tests show PASS \u2014 but ALL were Automated Static Checks by Antigravity (code-exists verification, NOT live functional testing)",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "Live manual testing + AI prompt verification with real data is still required before this application can be considered production-ready.",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "SUMMARY METRICS",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "Total Gaps Identified",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "23"
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "CRITICAL (P0) \u2014 Must fix before any live use",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "3"
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "HIGH (P1) \u2014 Fix before production launch",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "5"
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "MEDIUM (P2) \u2014 Fix within first 2 sprints",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "8"
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "LOW (P3) \u2014 Fix in backlog",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "7"
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "Features in spec but NOT tested at all",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "11"
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "AI chat answers that were SIMULATED (not real calls)",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "15 / 15"
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "Test cases verified by live human tester",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "0 / 104"
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "WHAT THE TEST RESULTS ACTUALLY TELL US",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u2705 Confirmed",
+      "Unnamed: 1": "Code files exist for all 104 features",
+      "Unnamed: 2": "The Antigravity build created the required controllers, services, UI pages, and DB schema.",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u2705 Confirmed",
+      "Unnamed: 1": "Prisma schema has all 13 models",
+      "Unnamed: 2": "User, Company, BudgetPlan, BudgetLine (jan-dec), Actuals, Variance, Employee, HeadcountPlan, UploadedFile, AIInsight, Connector, Report, KPI \u2014 all confirmed.",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u2705 Confirmed",
+      "Unnamed: 1": "Python processor has all 5 files",
+      "Unnamed: 2": "csv_processor.py, excel_processor.py, data_cleaner.py, variance_calculator.py, forecast_engine.py \u2014 confirmed present.",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u2705 Confirmed",
+      "Unnamed: 1": "Docker compose has health checks",
+      "Unnamed: 2": "All 5 services (postgres, redis, backend, frontend, python_processor) have health check blocks.",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u2705 Confirmed",
+      "Unnamed: 1": "AI service has 8-second timeout",
+      "Unnamed: 2": "Promise.race wrapper applied to all 3 providers in the fallback chain.",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u2705 Confirmed",
+      "Unnamed: 1": "Upload page shows 7 file type cards",
+      "Unnamed: 2": "All 7 cards render with required column names via ft.columns.join().",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u2705 Confirmed",
+      "Unnamed: 1": "Variance page has per-row AI Explain",
+      "Unnamed: 2": "Brain icon button on every table row calls AI explain inline.",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u2705 Confirmed",
+      "Unnamed: 1": "Board pack PDF has 10 sections",
+      "Unnamed: 2": "ReportService.generatePDF() generates all 10 page sections.",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u274c NOT confirmed",
+      "Unnamed: 1": "The app actually runs end-to-end",
+      "Unnamed: 2": "No docker-compose up was run with real data \u2014 no live test.",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u274c NOT confirmed",
+      "Unnamed: 1": "AI calls hit real Groq/Gemini APIs",
+      "Unnamed: 2": "All AI responses in the test file are simulated JSON \u2014 not real API responses.",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u274c NOT confirmed",
+      "Unnamed: 1": "Data flows from CSV upload to AI response",
+      "Unnamed: 2": "No test uploaded a CSV and then asked the AI a question about that CSV's data.",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u274c NOT confirmed",
+      "Unnamed: 1": "Emails actually send",
+      "Unnamed: 2": "SMTP not configured or tested.",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u274c NOT confirmed",
+      "Unnamed: 1": "WebSocket real-time updates work",
+      "Unnamed: 2": "No two-browser test performed.",
+      "Unnamed: 3": NaN
+    },
+    {
+      "\ud83d\udccb  Financial Budget Builder \u2014 Test Gap Analysis Report": "\u274c NOT confirmed",
+      "Unnamed: 1": "Performance with large datasets",
+      "Unnamed: 2": "No 10K-row file actually processed.",
+      "Unnamed: 3": NaN
+    }
+  ],
+  "\ud83d\udd34 Gap Register": [
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "Source: Financial_Budget_Builder_Final_Test_Output.xlsx analysis  |  23 gaps across Critical / High / Medium / Low severity",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "Gap ID",
+      "Unnamed: 1": "Category",
+      "Unnamed: 2": "Severity",
+      "Unnamed: 3": "Gap Title",
+      "Unnamed: 4": "What Is Missing / Problem",
+      "Unnamed: 5": "What Needs to Be Built / Fixed",
+      "Unnamed: 6": "Est. Effort",
+      "Unnamed: 7": "Priority"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-001",
+      "Unnamed: 1": "Testing Method",
+      "Unnamed: 2": "CRITICAL",
+      "Unnamed: 3": "All 104 tests are AUTOMATED STATIC CHECKS \u2014 not live manual tests",
+      "Unnamed: 4": "Every test says '[Automated Static Check] Verified implementation in codebase'. This only confirms code files EXIST. It does NOT confirm the app runs, APIs respond, UI renders, or data flows end-to-end.",
+      "Unnamed: 5": "Run the app via docker-compose up and manually verify each of the 104 test cases on a live running instance. Re-mark PASS only after human tester confirms it works with real data.",
+      "Unnamed: 6": "3\u20135 days",
+      "Unnamed: 7": "P0"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-002",
+      "Unnamed: 1": "AI Testing",
+      "Unnamed: 2": "CRITICAL",
+      "Unnamed: 3": "All 15 AI chat tests are SIMULATED \u2014 not real AI calls",
+      "Unnamed: 4": "The 'Detailed AI Output' sheet shows perfect JSON responses, but these were generated by Antigravity to simulate expected output \u2014 NOT actual calls to Groq/Gemini/Anthropic with real financial data from the DB.",
+      "Unnamed: 5": "With the app running and real CSV data uploaded: (1) enter each of the 15 prompts in the Chat sidebar, (2) verify the actual AI provider responds (check 'via groq' badge), (3) confirm numbers in the response match the uploaded CSV data \u2014 not hallucinated values.",
+      "Unnamed: 6": "1\u20132 days",
+      "Unnamed: 7": "P0"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-003",
+      "Unnamed: 1": "AI Data Grounding",
+      "Unnamed: 2": "CRITICAL",
+      "Unnamed: 3": "AI responses reference numbers that don't match the sample CSV data",
+      "Unnamed: 4": "The AI chat tests show 'burn rate \u20b943L/month' and 'revenue \u20b91.12 Cr' \u2014 but the sample budget.csv has Engineering salaries of \u20b920L/month and total revenue far lower. This suggests the AI is hallucinating numbers instead of reading from the actual uploaded data.",
+      "Unnamed: 5": "Verify that AI prompts in prompts.ts actually inject real DB data (budget lines, actuals, variances) into the prompt context before calling Groq/Gemini/Anthropic. Check the chatWithData() function fetches financialContext from DB and passes it to the prompt.",
+      "Unnamed: 6": "2\u20133 days",
+      "Unnamed: 7": "P0"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-004",
+      "Unnamed: 1": "Reports",
+      "Unnamed: 2": "HIGH",
+      "Unnamed: 3": "PowerPoint (.pptx) export is in the spec but not in the 104-item test list",
+      "Unnamed: 4": "The original spec requires 'Export as PowerPoint (pptx)'. Test case 58 says 'Export Report as PowerPoint (.pptx)' and shows PASS \u2014 but this was an automated static check only, not a real PPT file download and open.",
+      "Unnamed: 5": "Implement ReportService.generatePPTX() using pptx npm package or python-pptx. Each of the 10 board pack sections should become one slide. Test by clicking Export PowerPoint \u2192 verify .pptx downloads \u2192 open in PowerPoint \u2192 charts and text visible on slides.",
+      "Unnamed: 6": "3\u20134 days",
+      "Unnamed: 7": "P1"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-005",
+      "Unnamed: 1": "Forecasting Page",
+      "Unnamed: 2": "HIGH",
+      "Unnamed: 3": "Forecasting page UI (/forecasting) not verified \u2014 only Python engine was tested",
+      "Unnamed: 4": "Test 54 checks 'POST /api/forecast' at the Python level. But the actual /forecasting page (with confidence interval chart, upside/downside scenario toggle, and 3/6/12-month forecast visualization) has no test case in the 104-item list.",
+      "Unnamed: 5": "Go to /forecasting \u2192 verify: (1) 3/6/12-month forecast line chart renders with shaded confidence band, (2) 'Upside Scenario' toggle adds optimistic line, (3) 'Downside Scenario' toggle adds pessimistic line, (4) chart updates when new actuals are uploaded.",
+      "Unnamed: 6": "1\u20132 days",
+      "Unnamed: 7": "P1"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-006",
+      "Unnamed: 1": "AI Insight Panel",
+      "Unnamed: 2": "HIGH",
+      "Unnamed: 3": "Floating AI Insight Panel (visible on all pages) not tested",
+      "Unnamed: 4": "The spec requires an AI Insight Panel showing top 3 page-relevant insights on every page. This component (AIInsightPanel.tsx) is in the file structure but has no test case in the 104-item checklist.",
+      "Unnamed: 5": "Navigate to /dashboard, /variance, /budget, /headcount pages \u2192 confirm AI insight panel is visible on each \u2192 verify 3 insights shown \u2192 verify insights are relevant to that specific page \u2192 verify insights refresh when data changes.",
+      "Unnamed: 6": "1 day",
+      "Unnamed: 7": "P1"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-007",
+      "Unnamed: 1": "Email / SMTP",
+      "Unnamed: 2": "HIGH",
+      "Unnamed: 3": "Email notifications not tested \u2014 SMTP never actually triggered",
+      "Unnamed: 4": "Tests 60 (Scheduled Reports), 79 (Approval Notifications), and the Variance Alert System (test 32) all claim PASS via static check. But no actual SMTP email was sent or received during testing.",
+      "Unnamed: 5": "Configure SMTP credentials in .env (SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS). Then: (1) Submit a budget for approval \u2192 check approver inbox for email, (2) Set a scheduled report \u2192 confirm email arrives at scheduled time, (3) Create a variance >10% \u2192 confirm alert email received.",
+      "Unnamed: 6": "2\u20133 days",
+      "Unnamed: 7": "P1"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-008",
+      "Unnamed: 1": "Collaborative Features",
+      "Unnamed: 2": "HIGH",
+      "Unnamed: 3": "Comments, @mentions, approval workflow, activity log \u2014 all static-checked only",
+      "Unnamed: 4": "Tests 75\u201380 (COLLAB module) all show PASS via automated static check. These are complex multi-user features that absolutely require live end-to-end testing with multiple user sessions.",
+      "Unnamed: 5": "Open two browser windows with different user roles. Test: (1) Add comment on budget line \u2192 second user sees it, (2) @mention second user \u2192 notification appears, (3) Submit for approval \u2192 approver sees pending state \u2192 approves \u2192 submitter sees Approved status, (4) Check activity log shows all changes.",
+      "Unnamed: 6": "2 days",
+      "Unnamed: 7": "P1"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-009",
+      "Unnamed: 1": "Google Sheets Connector",
+      "Unnamed: 2": "HIGH",
+      "Unnamed: 3": "Google Sheets import connector claimed PASS but requires OAuth credentials to actually work",
+      "Unnamed: 4": "Test 13 ('Google Sheets Connector') is PASS via static check. The Google Sheets connector requires GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, and GOOGLE_SERVICE_ACCOUNT_KEY in .env \u2014 which are optional and were likely not configured.",
+      "Unnamed: 5": "Add Google OAuth credentials to .env. Then: paste a public Google Sheet URL into the connector field \u2192 verify sheet tabs are auto-detected \u2192 verify column headers are read \u2192 import data \u2192 confirm rows appear in the actuals table.",
+      "Unnamed: 6": "1\u20132 days",
+      "Unnamed: 7": "P2"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-010",
+      "Unnamed: 1": "Variance Alert System",
+      "Unnamed: 2": "HIGH",
+      "Unnamed: 3": "Variance threshold alert system not implemented at the UI level",
+      "Unnamed: 4": "Test 32 claims the Variance Alert System (set threshold % \u2192 get notified) is PASS. But the /variance page built by Antigravity has no visible 'Set Alert Threshold' UI control \u2014 only the AI Explain and AI Analyze All buttons were explicitly built.",
+      "Unnamed: 5": "Add an alert threshold input on /variance page (e.g., 'Alert me when variance exceeds X%'). Store threshold in company settings. When POST /api/variance/calculate finds variances beyond threshold, trigger email + in-app notification. Test by setting 5% threshold and creating a 15% variance.",
+      "Unnamed: 6": "2\u20133 days",
+      "Unnamed: 7": "P2"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-011",
+      "Unnamed: 1": "Monthly Close Checklist",
+      "Unnamed: 2": "MEDIUM",
+      "Unnamed: 3": "Monthly Close checklist with checkboxes not verified in live UI",
+      "Unnamed: 4": "Test 59 ('Monthly Close Dashboard') is PASS via static check. The spec requires a close checklist with individual checkboxes (e.g., 'Actuals imported \u2713', 'Variances calculated \u2713', 'Board pack generated \u2713'). No test confirmed this UI is interactive and tracks state.",
+      "Unnamed: 5": "Go to /reports \u2192 find monthly close section \u2192 verify checklist renders with checkbox items \u2192 check one item \u2192 verify state persists on refresh \u2192 click 'One-click Monthly Close' \u2192 verify all items auto-complete.",
+      "Unnamed: 6": "1 day",
+      "Unnamed: 7": "P2"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-012",
+      "Unnamed: 1": "Headcount Forecast Chart",
+      "Unnamed: 2": "MEDIUM",
+      "Unnamed: 3": "12-month headcount forecast chart with planned hires not verified",
+      "Unnamed: 4": "Test 50 ('Headcount Forecast 12 months') is PASS via static check. The spec requires: planned hire timeline, cost-to-hire tracking, cumulative headcount line chart with planned hires plotted month-by-month.",
+      "Unnamed: 5": "On /headcount page: (1) click 'Add Planned Hire' \u2192 enter role, dept, start month, salary \u2192 verify entry added, (2) verify 12-month chart shows cumulative headcount line + salary cost projection, (3) add multiple planned hires \u2192 verify chart updates.",
+      "Unnamed: 6": "1\u20132 days",
+      "Unnamed: 7": "P2"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-013",
+      "Unnamed: 1": "Attrition Risk Score",
+      "Unnamed: 2": "MEDIUM",
+      "Unnamed: 3": "Attrition risk scoring per department not verified",
+      "Unnamed: 4": "The spec requires attrition risk scoring per department. The 104-item test does not have a dedicated test case for this feature \u2014 it is mentioned in the AI analysis panel description only.",
+      "Unnamed: 5": "On /headcount page: verify each department card or table row shows an attrition risk indicator (Low/Medium/High). The risk should be calculated from employee tenure, salary below market, or other signals. The AI analysis panel should explain which depts are at risk.",
+      "Unnamed: 6": "2 days",
+      "Unnamed: 7": "P2"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-014",
+      "Unnamed: 1": "Waterfall Chart",
+      "Unnamed: 2": "MEDIUM",
+      "Unnamed: 3": "WaterfallChart component specified but not tested",
+      "Unnamed: 4": "The file structure includes WaterfallChart.tsx but no test case validates it renders or is used on any page. The waterfall chart is essential for P&L bridge analysis.",
+      "Unnamed: 5": "Confirm WaterfallChart.tsx renders on at least one page (e.g., /variance or /reports). It should show Revenue \u2192 COGS \u2192 Gross Profit \u2192 OpEx line-items \u2192 EBITDA waterfall. Verify bars are colored green (positive) and red (negative).",
+      "Unnamed: 6": "1\u20132 days",
+      "Unnamed: 7": "P2"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-015",
+      "Unnamed: 1": "CashFlowChart Component",
+      "Unnamed: 2": "MEDIUM",
+      "Unnamed: 3": "CashFlowChart component not tested in any live page",
+      "Unnamed: 4": "CashFlowChart.tsx is in the components folder but no test confirms it renders with real cash flow data from the uploaded cashflow.csv.",
+      "Unnamed: 5": "Upload cashflow.csv \u2192 navigate to /dashboard or /reports \u2192 confirm CashFlowChart renders with Operating/Investing/Financing breakdown \u2192 hover shows values \u2192 negative bars shown in red.",
+      "Unnamed: 6": "1 day",
+      "Unnamed: 7": "P2"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-016",
+      "Unnamed: 1": "KPI Management from Settings",
+      "Unnamed: 2": "MEDIUM",
+      "Unnamed: 3": "KPI CRUD from settings page not tested",
+      "Unnamed: 4": "The API endpoints GET/POST/PUT /api/kpis exist and are tested at API level. But the spec says users can 'add/edit KPIs from settings'. No test confirms this settings UI works.",
+      "Unnamed: 5": "Go to /settings \u2192 find KPI management section \u2192 add a new KPI (name, unit, target, period) \u2192 verify it appears in the dashboard 12-KPI grid \u2192 edit the target \u2192 verify dashboard updates.",
+      "Unnamed: 6": "1 day",
+      "Unnamed: 7": "P2"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-017",
+      "Unnamed: 1": "Export to Google Sheets",
+      "Unnamed: 2": "MEDIUM",
+      "Unnamed: 3": "Export TO Google Sheets not tested (only import FROM was tested)",
+      "Unnamed: 4": "The spec requires 'Export any report to Google Sheets'. Only Google Sheets import (connector) was tested. No test covers the export direction.",
+      "Unnamed: 5": "From /reports or /budget: click 'Export to Google Sheets' \u2192 authenticate \u2192 enter destination spreadsheet URL \u2192 verify data appears in Google Sheet with correct columns and formatting.",
+      "Unnamed: 6": "2\u20133 days",
+      "Unnamed: 7": "P3"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-018",
+      "Unnamed: 1": "Bulk Employee Import",
+      "Unnamed: 2": "MEDIUM",
+      "Unnamed: 3": "Bulk import employees via CSV not verified",
+      "Unnamed: 4": "The API endpoint POST /api/headcount/import exists. But no test confirms the headcount page has a 'bulk import' button that calls this endpoint with a CSV, and shows the results.",
+      "Unnamed: 5": "On /headcount page: find 'Bulk Import' or 'Upload CSV' button \u2192 upload headcount.csv \u2192 verify all 8 employees appear in the roster table without having to add them one by one.",
+      "Unnamed: 6": "1 day",
+      "Unnamed: 7": "P3"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-019",
+      "Unnamed: 1": "Performance",
+      "Unnamed: 2": "LOW",
+      "Unnamed: 3": "Large file upload (10,000+ rows) not actually tested",
+      "Unnamed: 4": "Test 98 ('Large File Upload 10,000+ rows') is PASS via static check. No actual 10K-row CSV was uploaded to test memory usage, timeout behaviour, or processing time.",
+      "Unnamed: 5": "Create a CSV with 10,000 actuals rows. Upload it. Measure: (1) Time to process (should be <2 min), (2) No browser or server timeout, (3) All 10,000 rows appear in the actuals table, (4) Docker stats show no memory spike that could crash the container.",
+      "Unnamed: 6": "1 day",
+      "Unnamed: 7": "P2"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-020",
+      "Unnamed: 1": "Mobile Responsive",
+      "Unnamed: 2": "LOW",
+      "Unnamed: 3": "Mobile responsiveness not tested at all",
+      "Unnamed: 4": "No test case covers mobile/tablet viewport. The spec doesn't explicitly require mobile, but the dark theme dashboard with data tables and charts will likely break on narrow screens.",
+      "Unnamed: 5": "Open the app on a mobile device or Chrome DevTools device emulation (375px width). Test: (1) Sidebar collapses to hamburger menu, (2) Tables scroll horizontally, (3) Charts resize, (4) Upload drag-drop works on touch, (5) Forms are usable.",
+      "Unnamed: 6": "2\u20133 days",
+      "Unnamed: 7": "P3"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-021",
+      "Unnamed: 1": "Redis Cache Validation",
+      "Unnamed: 2": "LOW",
+      "Unnamed: 3": "Redis caching layer not validated \u2014 no test confirms cache hits or TTL",
+      "Unnamed: 4": "Redis is running (health check passes) but no test confirms that list queries are cached with 5-minute TTL, that cache is invalidated on data write, or that the app works when Redis is down.",
+      "Unnamed: 5": "Test: (1) Load /dashboard \u2192 check Network tab \u2014 second load within 5 min should be faster (cache hit), (2) Upload new actuals \u2192 dashboard should show new data (cache invalidated), (3) Stop Redis container \u2192 verify app degrades gracefully without crashing.",
+      "Unnamed: 6": "1 day",
+      "Unnamed: 7": "P3"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-022",
+      "Unnamed: 1": "Cross-Browser Testing",
+      "Unnamed: 2": "LOW",
+      "Unnamed: 3": "Cross-browser testing not performed",
+      "Unnamed: 4": "All tests were done in a single environment. Financial apps are used in Chrome, Firefox, Safari (Mac), and Edge. Chart libraries (Recharts/Chart.js) can behave differently.",
+      "Unnamed: 5": "Open the app in Chrome, Firefox, Safari, and Edge. Test: (1) All charts render, (2) WebSocket connects, (3) File upload works, (4) Drag & drop functions, (5) PDF download opens correctly.",
+      "Unnamed: 6": "1 day",
+      "Unnamed: 7": "P3"
+    },
+    {
+      "\ud83d\udd34  Gap Register \u2014 All 23 Gaps Identified from Test Results": "G-023",
+      "Unnamed: 1": "Production Config",
+      "Unnamed: 2": "LOW",
+      "Unnamed: 3": "AWS S3 storage and production env vars not tested",
+      "Unnamed: 4": "STORAGE_MODE=local is used throughout. The spec supports S3 for production. No test confirms the S3 path works or that production environment variables are documented for deployment.",
+      "Unnamed: 5": "Set STORAGE_MODE=s3 with valid AWS credentials. Upload a file \u2192 confirm it appears in S3 bucket \u2192 download it \u2192 confirm file is readable. Also document production .env values needed for deployment to Vercel/Railway/AWS.",
+      "Unnamed: 6": "1\u20132 days",
+      "Unnamed: 7": "P3"
+    }
+  ],
+  "\ud83c\udfd7\ufe0f What To Build": [
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": "#",
+      "Unnamed: 1": "What to Build / Fix",
+      "Unnamed: 2": "Exact Steps & Acceptance Criteria",
+      "Unnamed: 3": "File / Module",
+      "Unnamed: 4": "Effort",
+      "Unnamed: 5": "Priority"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 1,
+      "Unnamed: 1": "Run Live End-to-End Test Suite",
+      "Unnamed: 2": "1. Run: docker-compose up --build\n2. Run: npx prisma migrate dev\n3. Open http://localhost:3000\n4. Register account \u2192 upload all 7 CSVs \u2192 calculate variances \u2192 generate board pack \u2192 verify every feature works with real data\nACCEPTANCE: Every 104 test re-marked by human after live verification",
+      "Unnamed: 3": "All services / docker-compose.yml",
+      "Unnamed: 4": "3\u20135 days",
+      "Unnamed: 5": "P0"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 2,
+      "Unnamed: 1": "Fix AI Data Grounding \u2014 inject real DB data into prompts",
+      "Unnamed: 2": "1. Open backend/src/services/ai/prompts.ts\n2. Verify each prompt function (analyzeVariance, chatWithData, etc.) receives actual data objects from DB \u2014 not empty {}\n3. In aiController.ts, confirm data is fetched from DB before calling AIService\n4. Test: upload budget.csv \u2192 ask AI 'What is Engineering budget for Jan?' \u2192 AI must answer with the real value from uploaded file\nACCEPTANCE: AI answer numbers match the CSV data you uploaded",
+      "Unnamed: 3": "backend/src/services/ai/prompts.ts\nbackend/src/controllers/aiController.ts",
+      "Unnamed: 4": "2\u20133 days",
+      "Unnamed: 5": "P0"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 3,
+      "Unnamed: 1": "Verify real Groq/Gemini/Anthropic API calls \u2014 not simulated",
+      "Unnamed: 2": "1. Add GROQ_API_KEY to .env\n2. Start backend\n3. POST to http://localhost:4000/api/ai/analyze-variance with real period data\n4. Check backend logs for '[AI] Trying provider: groq'\n5. Check response has 'provider: groq' badge\n6. Disable GROQ_API_KEY \u2192 repeat \u2192 verify fallback to gemini\n7. Disable both \u2192 verify fallback to anthropic\nACCEPTANCE: 3 provider fallbacks confirmed with real API keys",
+      "Unnamed: 3": "backend/src/services/ai/AIService.ts",
+      "Unnamed: 4": "1\u20132 days",
+      "Unnamed: 5": "P0"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 4,
+      "Unnamed: 1": "Build PowerPoint (.pptx) Export",
+      "Unnamed: 2": "1. Install pptx npm package in backend\n2. Add generatePPTX() method to ReportService.ts\n3. Each of the 10 board pack sections = 1 slide\n4. Add route: GET /api/reports/:id/download?format=pptx\n5. Add 'Export PPTX' button to /reports page\nACCEPTANCE: Click Export PowerPoint \u2192 .pptx downloads \u2192 opens in PowerPoint with 10 slides and chart data",
+      "Unnamed: 3": "backend/src/services/ReportService.ts\nfrontend/src/app/(dashboard)/reports/page.tsx",
+      "Unnamed: 4": "3\u20134 days",
+      "Unnamed: 5": "P1"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 5,
+      "Unnamed: 1": "Verify /forecasting page UI renders with real data",
+      "Unnamed: 2": "1. Upload actuals CSV with 6+ months of data\n2. Navigate to /forecasting\n3. Verify: 3/6/12-month forecast line chart with shaded confidence band\n4. Click 'Upside Scenario' \u2192 optimistic line appears\n5. Click 'Downside Scenario' \u2192 pessimistic line appears\n6. Verify assumptions text below chart lists growth rate used\nACCEPTANCE: All 3 scenarios visible on chart with confidence bands",
+      "Unnamed: 3": "frontend/src/app/(dashboard)/forecasting/page.tsx",
+      "Unnamed: 4": "1\u20132 days",
+      "Unnamed: 5": "P1"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 6,
+      "Unnamed: 1": "Verify AI Insight Panel on every page",
+      "Unnamed: 2": "1. Navigate to /dashboard \u2192 confirm AIInsightPanel shows 3 insights\n2. Navigate to /variance \u2192 confirm panel shows 3 variance-relevant insights\n3. Navigate to /budget \u2192 confirm panel shows 3 budget-relevant insights\n4. Upload new data \u2192 confirm panel insights refresh\nACCEPTANCE: Floating panel visible on all 6 main pages with context-appropriate insights",
+      "Unnamed: 3": "frontend/src/components/ai/AIInsightPanel.tsx",
+      "Unnamed: 4": "1 day",
+      "Unnamed: 5": "P1"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 7,
+      "Unnamed: 1": "Configure and test email sending (SMTP)",
+      "Unnamed: 2": "1. Add to .env: SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS (use Gmail app password)\n2. Submit a budget for approval \u2192 check approver inbox\n3. Set a scheduled report (daily) \u2192 check email arrives\n4. Create variance >10% \u2192 check alert email received\nACCEPTANCE: All 3 email types (approval, scheduled report, variance alert) received in inbox",
+      "Unnamed: 3": "backend/src/jobs/syncJobs.ts\nbackend/src/services/EmailService.ts",
+      "Unnamed: 4": "2\u20133 days",
+      "Unnamed: 5": "P1"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 8,
+      "Unnamed: 1": "Live multi-user collaboration test",
+      "Unnamed: 2": "1. Open Browser A as Admin, Browser B as Budget Owner\n2. In Browser B: add comment on Engineering budget line \u2192 Browser A: verify comment visible\n3. In Browser B: @mention Admin \u2192 Browser A: verify notification\n4. In Browser B: submit budget for approval \u2192 Browser A: approve it\n5. Verify status trail: Draft\u2192Submitted\u2192Under Review\u2192Approved\n6. In Browser A: go to Activity Log \u2192 verify all actions recorded\nACCEPTANCE: All collaborative actions work between two live users",
+      "Unnamed: 3": "frontend/src/app/(dashboard)/budget/\nbackend/src/websocket/socketHandler.ts",
+      "Unnamed: 4": "2 days",
+      "Unnamed: 5": "P1"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 9,
+      "Unnamed: 1": "Build Variance Alert Threshold UI",
+      "Unnamed: 2": "1. Add 'Alert Threshold %' input field to /variance page header\n2. Save threshold to company settings in DB\n3. In POST /api/variance/calculate: after computing variances, check if any exceed threshold\n4. If exceeded: emit socket event + create in-app notification + trigger email alert\nACCEPTANCE: Set 5% threshold \u2192 calculate variance with 15% item \u2192 alert email received + in-app toast shown",
+      "Unnamed: 3": "frontend/src/app/(dashboard)/variance/page.tsx\nbackend/src/services/VarianceService.ts",
+      "Unnamed: 4": "2\u20133 days",
+      "Unnamed: 5": "P2"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 10,
+      "Unnamed: 1": "Test and verify Monthly Close checklist UI",
+      "Unnamed: 2": "1. Go to /reports \u2192 find Monthly Close section\n2. Verify interactive checklist with items: Actuals imported, Variances calculated, Board pack generated\n3. Tick one item \u2192 verify state persists on page refresh\n4. Click 'One-click Monthly Close' \u2192 verify all items auto-complete and status badge changes\nACCEPTANCE: Checklist is interactive, state persists, one-click close works",
+      "Unnamed: 3": "frontend/src/app/(dashboard)/reports/page.tsx",
+      "Unnamed: 4": "1 day",
+      "Unnamed: 5": "P2"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 11,
+      "Unnamed: 1": "Verify Headcount Forecast chart with planned hires",
+      "Unnamed: 2": "1. On /headcount page: click 'Add Planned Hire'\n2. Enter: role=Senior Engineer, dept=Engineering, start=June 2025, salary=2400000\n3. Verify 12-month chart shows headcount jump in June\n4. Add 3 more planned hires \u2192 verify chart line updates\nACCEPTANCE: Chart shows cumulative headcount line + salary cost projection with planned hires",
+      "Unnamed: 3": "frontend/src/app/(dashboard)/headcount/page.tsx",
+      "Unnamed: 4": "1\u20132 days",
+      "Unnamed: 5": "P2"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 12,
+      "Unnamed: 1": "Implement Attrition Risk Scoring",
+      "Unnamed: 2": "1. In HeadcountService.ts: calculate risk score per dept based on: avg tenure < 1yr = HIGH, 1\u20133yr = MEDIUM, >3yr = LOW\n2. Add risk badge to each dept card on /headcount page\n3. Include attrition risk in AI headcount analysis prompt\nACCEPTANCE: Each department card shows Low/Medium/High attrition risk with explanation",
+      "Unnamed: 3": "backend/src/services/HeadcountService.ts\nfrontend/src/app/(dashboard)/headcount/page.tsx",
+      "Unnamed: 4": "2 days",
+      "Unnamed: 5": "P2"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 13,
+      "Unnamed: 1": "Verify WaterfallChart renders with real P&L data",
+      "Unnamed: 2": "1. Upload p_and_l.csv\n2. Navigate to /variance or /reports where WaterfallChart should appear\n3. Verify bars show: Revenue \u2192 COGS \u2192 Gross Profit \u2192 OpEx items \u2192 EBITDA\n4. Positive bars = green, negative = red\nACCEPTANCE: WaterfallChart visible on at least one page with real P&L data",
+      "Unnamed: 3": "frontend/src/components/charts/WaterfallChart.tsx",
+      "Unnamed: 4": "1\u20132 days",
+      "Unnamed: 5": "P2"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 14,
+      "Unnamed: 1": "Verify CashFlowChart with uploaded cash flow data",
+      "Unnamed: 2": "1. Upload cashflow.csv (12 months)\n2. Navigate to /dashboard or /reports\n3. Verify CashFlowChart renders with Operating/Investing/Financing/Net Cash bars\n4. Hover shows exact \u20b9 values, negative bars in red\nACCEPTANCE: CashFlowChart visible and accurate against cashflow.csv data",
+      "Unnamed: 3": "frontend/src/components/charts/CashFlowChart.tsx",
+      "Unnamed: 4": "1 day",
+      "Unnamed: 5": "P2"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 15,
+      "Unnamed: 1": "Performance test with 10,000+ row CSV",
+      "Unnamed: 2": "1. Generate a CSV with 10,000 actuals rows (use Python script or spreadsheet)\n2. Upload to /upload\n3. Measure: processing time (should be <2 min), no timeout errors\n4. After processing: go to /actuals \u2192 filter by department \u2192 verify all rows importable\nACCEPTANCE: 10K rows process in <2 min, all rows in DB, no container crash",
+      "Unnamed: 3": "python_processor/processors/csv_processor.py\nbackend/src/controllers/uploadController.ts",
+      "Unnamed: 4": "1 day",
+      "Unnamed: 5": "P2"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 16,
+      "Unnamed: 1": "KPI management from /settings page",
+      "Unnamed: 2": "1. Go to /settings \u2192 find KPI section\n2. Add KPI: name=CAC, unit=\u20b9, target=100000, period=2024-03\n3. Verify it appears in /dashboard 12-KPI grid\n4. Edit target \u2192 verify grid updates\nACCEPTANCE: KPIs are fully manageable from settings UI",
+      "Unnamed: 3": "frontend/src/app/(dashboard)/settings/page.tsx",
+      "Unnamed: 4": "1 day",
+      "Unnamed: 5": "P3"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 17,
+      "Unnamed: 1": "Test Google Sheets Connector (import)",
+      "Unnamed: 2": "1. Add GOOGLE_CLIENT_ID + GOOGLE_SERVICE_ACCOUNT_KEY to .env\n2. Go to /connectors \u2192 find Google Sheets card\n3. Paste a public Google Sheet URL\n4. Verify tabs are auto-detected, column headers read\n5. Import data \u2192 verify rows in actuals table\nACCEPTANCE: Data flows from Google Sheets into the app database",
+      "Unnamed: 3": "backend/src/controllers/connectorController.ts\nfrontend/src/app/(dashboard)/connectors/page.tsx",
+      "Unnamed: 4": "1\u20132 days",
+      "Unnamed: 5": "P3"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 18,
+      "Unnamed: 1": "Bulk employee import via CSV",
+      "Unnamed: 2": "1. On /headcount page: find 'Bulk Import' or 'Upload CSV' button\n2. Upload headcount.csv (8 employees)\n3. Verify all 8 employees appear in the roster without manual entry\nACCEPTANCE: Bulk import works from upload page or headcount page",
+      "Unnamed: 3": "frontend/src/app/(dashboard)/headcount/page.tsx\nbackend/src/controllers/headcountController.ts",
+      "Unnamed: 4": "1 day",
+      "Unnamed: 5": "P3"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 19,
+      "Unnamed: 1": "Mobile responsive testing",
+      "Unnamed: 2": "1. Open Chrome DevTools \u2192 set viewport to 375px (iPhone)\n2. Test each page: sidebar collapses, tables scroll horizontally, charts resize\n3. Test file upload drag-drop on mobile\n4. Test form inputs are usable on mobile keyboard\nACCEPTANCE: All pages are usable on mobile without horizontal page scroll",
+      "Unnamed: 3": "frontend/src/components/layout/Sidebar.tsx\nfrontend/src/app/(dashboard)/layout.tsx",
+      "Unnamed: 4": "2\u20133 days",
+      "Unnamed: 5": "P3"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 20,
+      "Unnamed: 1": "Redis cache validation",
+      "Unnamed: 2": "1. Load /dashboard \u2192 note response time \u2192 load again within 5 min \u2192 should be faster\n2. Upload new actuals \u2192 /dashboard should show updated data (cache invalidated)\n3. Stop Redis: docker stop finbudget_redis \u2192 app should still work (degrade gracefully)\nACCEPTANCE: Cache speeds up repeated reads, invalidates on write, app degrades gracefully without Redis",
+      "Unnamed: 3": "backend/src/config/redis.ts",
+      "Unnamed: 4": "1 day",
+      "Unnamed: 5": "P3"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 21,
+      "Unnamed: 1": "Cross-browser testing",
+      "Unnamed: 2": "1. Test app in Chrome, Firefox, Safari, Edge\n2. Check: all Recharts/Chart.js charts render, WebSocket connects, file upload works\n3. Fix any rendering issues specific to a browser\nACCEPTANCE: All core features work in all 4 browsers",
+      "Unnamed: 3": "frontend/ (all pages)",
+      "Unnamed: 4": "1 day",
+      "Unnamed: 5": "P3"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 22,
+      "Unnamed: 1": "Export report to Google Sheets",
+      "Unnamed: 2": "1. From /reports: click 'Export to Google Sheets'\n2. Authenticate with Google OAuth\n3. Enter destination spreadsheet URL\n4. Verify P&L data appears with correct columns and formatting\nACCEPTANCE: Report data exported to a real Google Sheet",
+      "Unnamed: 3": "backend/src/services/ReportService.ts",
+      "Unnamed: 4": "2\u20133 days",
+      "Unnamed: 5": "P3"
+    },
+    {
+      "\ud83c\udfd7\ufe0f  What Needs to Be Built / Fixed \u2014 Prioritised Action Plan": 23,
+      "Unnamed: 1": "Production config \u2014 S3 storage + deployment docs",
+      "Unnamed: 2": "1. Set STORAGE_MODE=s3 with real AWS credentials\n2. Upload a file \u2192 verify in S3 bucket \u2192 download \u2192 confirm readable\n3. Write README section: production deployment to Railway/Vercel/EC2\nACCEPTANCE: S3 upload/download works, deployment guide documented",
+      "Unnamed: 3": "backend/src/services/StorageService.ts\nREADME.md",
+      "Unnamed: 4": "1\u20132 days",
+      "Unnamed: 5": "P3"
+    }
+  ],
+  "\ud83e\udd16 AI Test Reality Check": [
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": "\u26a0\ufe0f  All 15 AI chat tests in the test file were SIMULATED by Antigravity \u2014 not real API calls. Numbers may not match your actual uploaded CSV data.",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": "#",
+      "Unnamed: 1": "Prompt Tested",
+      "Unnamed: 2": "Problem Found in Simulated Answer",
+      "Unnamed: 3": "What to Verify in Live Test",
+      "Unnamed: 4": "Red Flag"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 1,
+      "Unnamed: 1": "Why did marketing spend go up in Q3?",
+      "Unnamed: 2": "Answer says '\u20b91.2L over budget' for Q3 Events. But sample budget.csv has Marketing Events at \u20b92.0L\u2013\u20b910.0L/month \u2014 the simulated variance doesn't match the sample data structure.",
+      "Unnamed: 3": "Upload budget.csv + actuals_2024_03.csv \u2192 ask this question \u2192 verify the AI quotes numbers that MATCH the actual rows in those files.",
+      "Unnamed: 4": "Numbers don't match sample CSV"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 2,
+      "Unnamed: 1": "What is our current burn rate and runway?",
+      "Unnamed: 2": "Answer says 'burn rate \u20b943L/month, runway 18 months'. The sample budget.csv total monthly expense is much lower. Cash reserve data was never uploaded \u2014 runway calculation is hallucinated.",
+      "Unnamed: 3": "Upload cashflow.csv \u2192 ask burn rate \u2192 AI must calculate from Operating Activities column in that file. Answer should match cashflow.csv row for the latest period.",
+      "Unnamed: 4": "Hallucinated \u2014 no cash data uploaded"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 3,
+      "Unnamed: 1": "Which departments are over budget this month?",
+      "Unnamed: 2": "Answer says 'Engineering UNFAV by \u20b945K'. But no actuals were uploaded before this simulated test \u2014 the AI had no actual data to compare against the budget.",
+      "Unnamed: 3": "Upload budget.csv + actuals_2024_03.csv \u2192 POST /api/variance/calculate \u2192 ask this question \u2192 AI must list exact departments from the variance table.",
+      "Unnamed: 4": "Variance not calculated \u2014 no live data"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 4,
+      "Unnamed: 1": "Generate an executive summary for the board",
+      "Unnamed: 2": "Answer says 'revenue \u20b91.12 Cr, net income \u20b922L'. These exact numbers appear nowhere in the sample data provided (budget.csv revenues are \u20b980L\u2013\u20b91.2Cr depending on month). Could be coincidence or hallucination.",
+      "Unnamed: 3": "With real data uploaded: verify AI summary cites numbers that match actuals and P&L uploaded. Check specific \u20b9 amounts match the CSV rows.",
+      "Unnamed: 4": "Revenue figures may be hallucinated"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 5,
+      "Unnamed: 1": "What would happen if we cut 10% from all operating expenses?",
+      "Unnamed: 2": "Answer gives precise 'saves \u20b94.5L/month'. This requires the AI to know current total OpEx \u2014 which was never passed from the DB into the prompt in any confirmed test.",
+      "Unnamed: 3": "Verify aiController.ts fetches total actuals from DB before calling chatWithData(). The \u20b9 number in the answer should match SUM of actuals for the uploaded period.",
+      "Unnamed: 4": "OpEx total may not be from DB"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 6,
+      "Unnamed: 1": "Are we on track to hit annual revenue target?",
+      "Unnamed: 2": "Answer says 'MRR \u20b995L, ARR \u20b911.4Cr'. The sample budget.csv Product Revenue is \u20b980L\u2013\u20b91.2Cr/month \u2014 an ARR of \u20b911.4Cr is plausible but needs to be verified against actual DB values.",
+      "Unnamed: 3": "Verify AI computes YTD actuals revenue / months elapsed \u00d7 12 = projected ARR, compared against budget.totalRevenue from the BudgetPlan record in DB.",
+      "Unnamed: 4": "Formula basis not confirmed"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 7,
+      "Unnamed: 1": "Which KPIs are most at risk?",
+      "Unnamed: 2": "Answer mentions 'CAC \u20b91.25L' and 'Gross Margin 65%'. Neither value exists in kpis.csv sample data (KPI sample has generic Metric Name/Value format). These appear to be hallucinated.",
+      "Unnamed: 3": "Upload kpis.csv \u2192 verify AI answer quotes the exact Metric Name and Value columns from that file. CAC should only be mentioned if a KPI row named 'CAC' exists in the uploaded file.",
+      "Unnamed: 4": "KPI values hallucinated from thin air"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 8,
+      "Unnamed: 1": "How does headcount cost compare to budget?",
+      "Unnamed: 2": "Answer gives exact per-dept salary totals that happen to match the headcount.csv data \u2014 but the simulated test ran before data was uploaded, so this is coincidence or the AI was primed.",
+      "Unnamed: 3": "Upload headcount.csv \u2192 POST /api/headcount/import \u2192 ask question \u2192 verify AI quotes exactly the salaries from headcount.csv rows (e.g., EMP001 Priya Sharma \u20b92.8L salary).",
+      "Unnamed: 4": "May be primed \u2014 not from live DB"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 9,
+      "Unnamed: 1": "What is our gross margin this month?",
+      "Unnamed: 2": "Answer gives '65.1% gross margin' calculated as (11.2M - 3.9M) / 11.2M. But p_and_l.csv was listed in the test file but its actual sample data was not fully shown \u2014 unclear if these numbers match.",
+      "Unnamed: 3": "Upload p_and_l.csv \u2192 ask gross margin \u2192 verify AI uses Revenue and COGS columns from that exact file. The % must match: (Revenue - COGS) / Revenue for the most recent period row.",
+      "Unnamed: 4": "Calculation basis unverified"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 10,
+      "Unnamed: 1": "Forecast revenue for next 3 months",
+      "Unnamed: 2": "Answer gives '\u20b91.14Cr, \u20b91.18Cr, \u20b91.24Cr' based on '6 months of P&L data'. But only 6 rows of P&L were in the sample \u2014 and these are budget rows, not actuals.",
+      "Unnamed: 3": "Verify forecast_engine.py is called with real historical actuals (not budget). Forecasts should be based on Actuals table data, not BudgetLine data.",
+      "Unnamed: 4": "Forecast may use wrong data source"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 11,
+      "Unnamed: 1": "Why is Engineering variance unfavorable?",
+      "Unnamed: 2": "Answer cites 'EMP006 (DevOps) onboarding two weeks early' which is exactly in the headcount.csv sample. This is a good sign \u2014 but it needs to be confirmed the AI actually read from DB, not from its training on the sample data.",
+      "Unnamed: 3": "After uploading headcount.csv and uploading actuals, ask this question \u2192 AI must name the specific employee AND account code (5001 or 5002) from the uploaded data.",
+      "Unnamed: 4": "May be coincidence \u2014 verify with live data"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 12,
+      "Unnamed: 1": "Top 3 cost reduction opportunities?",
+      "Unnamed: 2": "Answer says 'switch to reserved instances, pause events, optimize CAC'. Generic CFO advice \u2014 not necessarily grounded in the company's specific cost structure from uploaded files.",
+      "Unnamed: 3": "Verify AI references specific Account Codes from chart_of_accounts.csv when making recommendations (e.g., 'Account 5002 Cloud Infra shows 30% over budget').",
+      "Unnamed: 4": "Generic advice \u2014 not data-specific"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 13,
+      "Unnamed: 1": "Is our cash flow healthy?",
+      "Unnamed: 2": "Answer says '\u20b958L from Operating Activities in March'. cashflow.csv sample has 12 months of data \u2014 this number needs to be verified against the actual row in the file.",
+      "Unnamed: 3": "Upload cashflow.csv \u2192 ask cash flow health \u2192 verify AI cites the correct period's Operating Activities amount from the file.",
+      "Unnamed: 4": "Amount needs CSV verification"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 14,
+      "Unnamed: 1": "What changed most between Feb and March?",
+      "Unnamed: 2": "Answer says 'Revenue jumped 5.6% (+\u20b96L)'. This requires two periods of actuals. Only one actuals file was uploaded (actuals_2024_03.csv \u2014 March only). Feb comparison requires actuals_jan_2025.csv or a Feb file.",
+      "Unnamed: 3": "Upload BOTH a Feb actuals file AND a March actuals file \u2192 then ask this question \u2192 AI must compare the two periods. Without both periods uploaded, the AI has no basis for period-over-period analysis.",
+      "Unnamed: 4": "Missing Feb actuals file for comparison"
+    },
+    {
+      "\ud83e\udd16  AI Chat Test Reality Check \u2014 Simulated vs What Real Results Should Look Like": 15,
+      "Unnamed: 1": "Which employees are in salary-overbudget depts?",
+      "Unnamed: 2": "Answer names 'Deepa Mehta (EMP006)' who is exactly in headcount.csv. This is very specific \u2014 confirms the AI either read from DB (good) or memorised the sample data (concerning).",
+      "Unnamed: 3": "Upload headcount.csv \u2192 calculate variances \u2192 ask this question \u2192 AI must name the employee AND their account code deviation. Then change a salary in the DB and re-ask \u2014 answer must change accordingly.",
+      "Unnamed: 4": "Verify AI reads DB, not memorised data"
+    }
+  ],
+  "\ud83d\udced Not Tested": [
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": "#",
+      "Unnamed: 1": "Feature (from original spec)",
+      "Unnamed: 2": "Why It Matters",
+      "Unnamed: 3": "How to Test",
+      "Unnamed: 4": "Priority"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 1,
+      "Unnamed: 1": "WaterfallChart component",
+      "Unnamed: 2": "P&L bridge analysis is a core CFO tool \u2014 shows how revenue walks down to net income",
+      "Unnamed: 3": "Upload p_and_l.csv \u2192 navigate to a page that uses WaterfallChart \u2192 verify bars show Revenue\u2192COGS\u2192GP\u2192OpEx\u2192EBITDA",
+      "Unnamed: 4": "P1"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 2,
+      "Unnamed: 1": "CashFlowChart component",
+      "Unnamed: 2": "Cash flow visualization is required for board pack and dashboard",
+      "Unnamed: 3": "Upload cashflow.csv \u2192 find CashFlowChart on /dashboard or /reports \u2192 verify 4-column bar chart (Operating, Investing, Financing, Net)",
+      "Unnamed: 4": "P1"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 3,
+      "Unnamed: 1": "AIInsightPanel on every page",
+      "Unnamed: 2": "Spec says floating panel with top 3 insights visible on ALL dashboard pages",
+      "Unnamed: 3": "Navigate to each of 6 dashboard pages \u2192 confirm AIInsightPanel component visible \u2192 insights are page-context-relevant",
+      "Unnamed: 4": "P1"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 4,
+      "Unnamed: 1": "Forecasting page UI /forecasting",
+      "Unnamed: 2": "Spec has a full page with confidence interval chart, scenario toggles, assumptions text",
+      "Unnamed: 3": "Go to /forecasting \u2192 verify chart with shaded confidence bands \u2192 toggle Upside/Downside scenarios",
+      "Unnamed: 4": "P1"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 5,
+      "Unnamed: 1": "PowerPoint .pptx export",
+      "Unnamed: 2": "Spec explicitly requires 'Export as PowerPoint (pptx)' from board report generator",
+      "Unnamed: 3": "Click Export PPTX \u2192 file downloads \u2192 opens in PowerPoint \u2192 10 slides with content",
+      "Unnamed: 4": "P1"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 6,
+      "Unnamed: 1": "Revenue vs Budget chart drill-down",
+      "Unnamed: 2": "Spec says 'click to drill down' on chart \u2014 no test for drill-down interactivity",
+      "Unnamed: 3": "Click a bar in the Revenue vs Budget chart \u2192 verify drill-down to department/category level",
+      "Unnamed: 4": "P2"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 7,
+      "Unnamed: 1": "Expense donut chart \u2014 click to filter",
+      "Unnamed: 2": "Spec says clicking a donut segment filters the table below",
+      "Unnamed: 3": "Click a segment in the Expense Breakdown donut \u2192 verify table below filters to that category",
+      "Unnamed: 4": "P2"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 8,
+      "Unnamed: 1": "Headcount forecast with planned hire timeline",
+      "Unnamed: 2": "Spec requires adding planned hires month-by-month and seeing cumulative chart update",
+      "Unnamed: 3": "Add a planned hire \u2192 verify 12-month headcount chart updates with the new hire in the correct month",
+      "Unnamed: 4": "P2"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 9,
+      "Unnamed: 1": "Attrition risk scoring per department",
+      "Unnamed: 2": "Spec requires attrition risk score \u2014 no test case for this at all",
+      "Unnamed: 3": "On /headcount: verify each dept card shows Low/Medium/High attrition risk indicator",
+      "Unnamed: 4": "P2"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 10,
+      "Unnamed: 1": "Cost-to-hire tracking",
+      "Unnamed: 2": "Spec requires cost-to-hire tracking per open role",
+      "Unnamed: 3": "On /headcount: verify open role cards show estimated cost-to-hire (recruiter cost + salary ramp)",
+      "Unnamed: 4": "P2"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 11,
+      "Unnamed: 1": "Landing page (/)",
+      "Unnamed: 2": "The landing page (hero section, features, CTA) \u2014 not tested",
+      "Unnamed: 3": "Navigate to http://localhost:3000 (not logged in) \u2192 verify landing page renders with app description and 'Get Started' CTA",
+      "Unnamed: 4": "P3"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 12,
+      "Unnamed: 1": "Budget comments + @mention notifications",
+      "Unnamed: 2": "Multi-user commenting system \u2014 zero live test coverage",
+      "Unnamed: 3": "Two-browser test: add comment with @mention \u2192 second user sees notification \u2192 notification links to correct budget line",
+      "Unnamed: 4": "P1"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 13,
+      "Unnamed: 1": "Budget approval email notifications",
+      "Unnamed: 2": "Spec requires email on approval/rejection \u2014 only static check done",
+      "Unnamed: 3": "Submit budget \u2192 approver approves \u2192 submitter gets email \u2192 verify email content includes budget name and approver name",
+      "Unnamed: 4": "P1"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 14,
+      "Unnamed: 1": "Activity log (who changed what)",
+      "Unnamed: 2": "Audit trail is critical for finance compliance \u2014 not live-tested",
+      "Unnamed: 3": "Make 5 changes (edit budget, approve, lock, add employee, calculate variance) \u2192 go to Activity Log \u2192 all 5 show with timestamp, user, action",
+      "Unnamed: 4": "P2"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 15,
+      "Unnamed: 1": "Currency auto-detection \u20b9 vs $",
+      "Unnamed: 2": "Spec requires auto-detecting currency from uploaded data",
+      "Unnamed: 3": "Upload a CSV with USD amounts ($) \u2192 verify dashboard shows $ \u2192 upload a \u20b9 CSV \u2192 verify dashboard switches to \u20b9",
+      "Unnamed: 4": "P2"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 16,
+      "Unnamed: 1": "Google Sheets export (not just import)",
+      "Unnamed: 2": "Spec requires exporting reports TO Google Sheets",
+      "Unnamed: 3": "From /reports: click Export to Google Sheets \u2192 authenticate \u2192 verify data appears in a Google Sheet",
+      "Unnamed: 4": "P3"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 17,
+      "Unnamed: 1": "Bulk employee import via CSV",
+      "Unnamed: 2": "API endpoint exists but no UI button confirmed",
+      "Unnamed: 3": "On /headcount: find Bulk Import button \u2192 upload headcount.csv \u2192 all 8 employees appear without manual entry",
+      "Unnamed: 4": "P3"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 18,
+      "Unnamed: 1": "Settings page: AI provider key management",
+      "Unnamed: 2": "Spec requires configuring API keys from UI, not just .env",
+      "Unnamed: 3": "Go to /settings \u2192 AI providers section \u2192 enter Groq API key \u2192 test connection \u2192 verify green Connected badge",
+      "Unnamed: 4": "P2"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 19,
+      "Unnamed: 1": "Settings page: user invite + deactivate",
+      "Unnamed: 2": "Admin user management from UI, not just via DB",
+      "Unnamed: 3": "Go to /settings \u2192 Users \u2192 invite by email \u2192 set role \u2192 deactivate \u2192 verify cannot login",
+      "Unnamed: 4": "P2"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 20,
+      "Unnamed: 1": "KPI CRUD from settings",
+      "Unnamed: 2": "Settings should allow adding/editing KPIs",
+      "Unnamed: 3": "Go to /settings \u2192 KPI section \u2192 add new KPI \u2192 verify it appears on /dashboard",
+      "Unnamed: 4": "P2"
+    },
+    {
+      "\ud83d\udced  Features in Spec NOT in Any Test Case \u2014 Zero Coverage": 21,
+      "Unnamed: 1": "P&L data in p_and_l.csv \u2014 verify AI reads it",
+      "Unnamed: 2": "p_and_l.csv exists but AI gross margin test may not have used it",
+      "Unnamed: 3": "Upload p_and_l.csv \u2192 ask 'what is our gross margin' \u2192 verify AI quotes exact Revenue and COGS numbers from that file",
+      "Unnamed: 4": "P1"
+    }
+  ],
+  "\ud83d\udcc5 Sprint Plan": [
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "\u2500\u2500 SPRINT 0\n(Pre-work)\n~1 day \u2014 Environment Setup \u2500\u2500",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Set up API keys: GROQ_API_KEY, GEMINI_API_KEY, ANTHROPIC_API_KEY in .env",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0 \u2014 Blocker"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Set up SMTP credentials (Gmail app password)",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0 \u2014 Blocker"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Run: docker-compose up --build",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0 \u2014 Blocker"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Run: npx prisma migrate dev",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0 \u2014 Blocker"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Confirm: http://localhost:3000 loads",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0 \u2014 Blocker"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Confirm: curl localhost:4000/api/health \u2192 200",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0 \u2014 Blocker"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Confirm: curl localhost:5001/health \u2192 200",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0 \u2014 Blocker"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "\u2500\u2500 SPRINT 1\n(Week 1)\n~5 days \u2014 Critical: Live Testing + AI Grounding \u2500\u2500",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Manually re-run all 104 test cases on live running app",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0\u2013P1 Critical"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Upload all 7 CSV files and verify data in DB",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0\u2013P1 Critical"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Verify AI calls hit real Groq API (not simulated)",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0\u2013P1 Critical"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Verify AI prompts.ts injects real DB data into context",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0\u2013P1 Critical"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Re-run all 15 AI prompts with real data \u2014 verify numbers match CSV",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0\u2013P1 Critical"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Fix any test failures found (expected: 10\u201320% of tests will fail on live run)",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0\u2013P1 Critical"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Fix: PowerPoint .pptx export",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P0\u2013P1 Critical"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "\u2500\u2500 SPRINT 2\n(Week 2)\n~5 days \u2014 High Priority Features + Email \u2500\u2500",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Configure SMTP \u2014 test all 3 email types (approval, scheduled, alert)",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P1 High"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Verify /forecasting page UI with confidence band chart + scenario toggles",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P1 High"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Verify AIInsightPanel on every dashboard page",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P1 High"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Live multi-user collaboration test (2 browsers)",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P1 High"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Build Variance Alert Threshold UI",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P1 High"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Fix: Waterfall chart + Cash Flow chart with real uploaded data",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P1 High"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "\u2500\u2500 SPRINT 3\n(Week 3)\n~5 days \u2014 Medium Priority Features \u2500\u2500",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Monthly Close checklist interactive UI",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P2 Medium"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Headcount forecast chart with planned hires",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P2 Medium"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Attrition risk scoring per department",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P2 Medium"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "KPI CRUD from settings page",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P2 Medium"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Currency auto-detection \u20b9/$ from uploaded data",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P2 Medium"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Activity log + user management from settings",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P2 Medium"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Performance test: 10,000-row CSV upload",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P2 Medium"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "\u2500\u2500 SPRINT 4\n(Week 4)\n~3 days \u2014 Low Priority + Production Readiness \u2500\u2500",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Google Sheets connector (import + export)",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P3 Low + Launch"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Bulk employee import via CSV",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P3 Low + Launch"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Mobile responsive testing + fixes",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P3 Low + Launch"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Redis cache validation",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P3 Low + Launch"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Cross-browser testing (Chrome/Firefox/Safari/Edge)",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P3 Low + Launch"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "S3 storage configuration + production deployment docs",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P3 Low + Launch"
+    },
+    {
+      "\ud83d\udcc5  Recommended Sprint Plan \u2014 From Test Results to Production-Ready": "  \u2192",
+      "Unnamed: 1": "Final: all 104 + new test cases marked by human tester",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "P3 Low + Launch"
+    }
+  ]
+}

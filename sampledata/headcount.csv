@@ -1,0 +1,9 @@
+Employee ID,Name,Title,Department,Start Date,Salary,Employment Type,Location,Status
+EMP001,Priya Sharma,VP Marketing,Marketing,2021-04-01,2800000,Full-time,Mumbai,Active
+EMP002,Rahul Verma,Senior Engineer,Engineering,2020-06-15,2200000,Full-time,Bangalore,Active
+EMP003,Ananya Patel,Sales Manager,Sales,2022-01-10,1800000,Full-time,Delhi,Active
+EMP004,Kiran Nair,HR Manager,HR,2019-09-01,1500000,Full-time,Hyderabad,Active
+EMP005,Suresh Kumar,Financial Analyst,Finance,2023-03-15,1200000,Full-time,Mumbai,Active
+EMP006,Deepa Mehta,DevOps Engineer,Engineering,2022-07-01,2000000,Full-time,Bangalore,Active
+EMP007,Amit Joshi,Content Manager,Marketing,2023-01-20,1100000,Full-time,Mumbai,Active
+EMP008,Sneha Rao,SDR,Sales,2023-06-01,900000,Full-time,Pune,Active

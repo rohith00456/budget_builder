@@ -1,0 +1,277 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ── User ──────────────────────────────────────────────
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String
+  password  String?
+  role      String   @default("VIEWER") // Enum: ADMIN, FINANCE_MANAGER, BUDGET_OWNER, VIEWER
+  companyId String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  company  Company    @relation(fields: [companyId], references: [id])
+  budgets  BudgetPlan[] @relation("UserBudgets")
+  reports  Report[]     @relation("UserReports")
+
+  @@map("users")
+}
+
+// ── Company ───────────────────────────────────────────
+model Company {
+  id               String   @id @default(cuid())
+  name             String
+  fiscalYearStart  Int      @default(1)
+  currency         String   @default("INR")
+  plan             String   @default("FREE")
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  users          User[]
+  budgetPlans    BudgetPlan[]
+  actuals        Actuals[]
+  variances      Variance[]
+  employees      Employee[]
+  headcountPlans HeadcountPlan[]
+  uploadedFiles  UploadedFile[]
+  aiInsights     AIInsight[]
+  connectors     Connector[]
+  reports        Report[]
+  kpis           KPI[]
+
+  @@map("companies")
+}
+
+// ── BudgetPlan ────────────────────────────────────────
+model BudgetPlan {
+  id             String       @id @default(cuid())
+  companyId      String
+  name           String
+  fiscalYear     Int
+  status         String       @default("DRAFT") // Enum: DRAFT, APPROVED, LOCKED
+  totalRevenue   Decimal      @default(0)
+  totalExpenses  Decimal      @default(0)
+  createdBy      String
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  company Company    @relation(fields: [companyId], references: [id])
+  creator User       @relation("UserBudgets", fields: [createdBy], references: [id])
+  lines   BudgetLine[]
+
+  @@map("budget_plans")
+}
+
+// ── BudgetLine ────────────────────────────────────────
+model BudgetLine {
+  id           String   @id @default(cuid())
+  budgetPlanId String
+  department   String
+  category     String
+  subCategory  String?
+  accountCode  String?
+  type         String   @default("EXPENSE") // Enum: REVENUE, EXPENSE, HEADCOUNT
+
+  jan Decimal @default(0)
+  feb Decimal @default(0)
+  mar Decimal @default(0)
+  apr Decimal @default(0)
+  may Decimal @default(0)
+  jun Decimal @default(0)
+  jul Decimal @default(0)
+  aug Decimal @default(0)
+  sep Decimal @default(0)
+  oct Decimal @default(0)
+  nov Decimal @default(0)
+  dec Decimal @default(0)
+
+  annual Decimal @default(0)
+  notes  String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  budgetPlan BudgetPlan @relation(fields: [budgetPlanId], references: [id])
+
+  @@map("budget_lines")
+}
+
+// ── Actuals ───────────────────────────────────────────
+model Actuals {
+  id          String   @id @default(cuid())
+  companyId   String
+  period      String   // YYYY-MM
+  department  String
+  category    String
+  accountCode String   @default("")
+  amount      Decimal
+  source      String   @default("MANUAL")
+  importedAt  DateTime @default(now())
+
+  company Company @relation(fields: [companyId], references: [id])
+
+  @@unique([companyId, period, department, category, accountCode])
+  @@map("actuals")
+}
+
+// ── Variance ──────────────────────────────────────────
+model Variance {
+  id                String          @id @default(cuid())
+  companyId         String
+  period            String
+  department        String
+  category          String
+  budgetAmount      Decimal
+  actualAmount      Decimal
+  variance          Decimal
+  variancePct       Decimal
+  status            String          @default("ONPLAN") // Enum: FAV, UNFAV, ONPLAN
+  aiExplanation     String?
+  aiRecommendation  String?
+  createdAt         DateTime        @default(now())
+  updatedAt         DateTime        @updatedAt
+
+  company Company @relation(fields: [companyId], references: [id])
+
+  @@unique([companyId, period, department, category])
+  @@map("variances")
+}
+
+// ── Employee ──────────────────────────────────────────
+model Employee {
+  id              String         @id @default(cuid())
+  companyId       String
+  name            String
+  title           String
+  department      String
+  startDate       DateTime
+  salary          Decimal
+  type            String         @default("FULL_TIME") // Enum: FULL_TIME, PART_TIME, CONTRACT, INTERN
+  location        String
+  status          String         @default("ACTIVE") // Enum: ACTIVE, ON_LEAVE, TERMINATED
+  budgetedSalary  Decimal?
+  hireDate        DateTime?
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+
+  company Company @relation(fields: [companyId], references: [id])
+
+  @@unique([companyId, name])
+  @@map("employees")
+}
+
+// ── HeadcountPlan ─────────────────────────────────────
+model HeadcountPlan {
+  id              String   @id @default(cuid())
+  companyId       String
+  fiscalYear      Int
+  department      String
+  openings        Int      @default(0)
+  filled          Int      @default(0)
+  budgetedSalary  Decimal
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  company Company @relation(fields: [companyId], references: [id])
+
+  @@map("headcount_plans")
+}
+
+// ── UploadedFile ──────────────────────────────────────
+model UploadedFile {
+  id            String       @id @default(cuid())
+  companyId     String
+  fileName      String
+  fileType      String
+  fileSize      Int
+  filePath      String       @default("")
+  status        String       @default("PROCESSING") // Enum: PROCESSING, COMPLETED, FAILED
+  mappings      String?
+  processedRows Int?
+  errors        String?
+  uploadedAt    DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  company Company @relation(fields: [companyId], references: [id])
+
+  @@map("uploaded_files")
+}
+
+// ── AIInsight ─────────────────────────────────────────
+model AIInsight {
+  id          String   @id @default(cuid())
+  companyId   String
+  type        String
+  period      String
+  content     String
+  provider    String
+  tokensUsed  Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  company Company @relation(fields: [companyId], references: [id])
+
+  @@map("ai_insights")
+}
+
+// ── Connector ─────────────────────────────────────────
+model Connector {
+  id            String          @id @default(cuid())
+  companyId     String
+  type          String
+  name          String
+  credentials   String          @default("{}")
+  lastSync      DateTime?
+  status        String          @default("DISCONNECTED") // Enum: CONNECTED, DISCONNECTED, SYNCING, ERROR
+  syncFrequency String          @default("DAILY")
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+
+  company Company @relation(fields: [companyId], references: [id])
+
+  @@unique([companyId, type])
+  @@map("connectors")
+}
+
+// ── Report ────────────────────────────────────────────
+model Report {
+  id          String   @id @default(cuid())
+  companyId   String
+  type        String
+  title       String
+  data        String
+  generatedAt DateTime @default(now())
+  generatedBy String
+
+  company Company @relation(fields: [companyId], references: [id])
+  user    User    @relation("UserReports", fields: [generatedBy], references: [id])
+
+  @@map("reports")
+}
+
+// ── KPI ───────────────────────────────────────────────
+model KPI {
+  id        String   @id @default(cuid())
+  companyId String
+  name      String
+  value     Decimal
+  unit      String
+  period    String
+  target    Decimal?
+  source    String?
+  trend     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  company Company @relation(fields: [companyId], references: [id])
+
+  @@unique([companyId, name, period])
+  @@map("kpis")
+}

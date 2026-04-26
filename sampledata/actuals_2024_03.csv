@@ -1,0 +1,9 @@
+Month,Year,Department,Category,Account Code,Actual Amount,Notes
+March,2024,Marketing,Digital Ads,6001,620000,Slightly over — Q1 campaign
+March,2024,Marketing,Events,6002,0,No events in March
+March,2024,Engineering,Salaries,5001,2050000,1 new hire mid-month
+March,2024,Engineering,Cloud Infra,5002,195000,Traffic spike
+March,2024,Sales,Salaries,7001,1500000,On plan
+March,2024,Sales,Commission,7002,480000,Strong month — 20% over
+March,2024,HR,Salaries,8001,810000,On plan
+March,2024,Finance,Salaries,9001,600000,On plan
