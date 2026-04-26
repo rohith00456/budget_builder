@@ -185,7 +185,7 @@ export class BudgetService {
         sheet.columns.forEach((col) => { col.width = 14; });
 
         const buffer = await workbook.xlsx.writeBuffer();
-        return buffer as Buffer;
+        return Buffer.from(buffer);
     }
 
     async copyFromPreviousYear(companyId: string, userId: string, fromPlanId: string, adjustmentPct = 0) {

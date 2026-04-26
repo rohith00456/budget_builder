@@ -262,6 +262,6 @@ export class ReportService {
     }
 
     const buffer = await pres.stream();
-    return buffer as Buffer;
+    return Buffer.from(buffer as ArrayBuffer);
   }
 }
